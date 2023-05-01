@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('https://fonts.google.com/specimen/Rubik');
+}
+:root {
+    --Pale-Violet : hsl(276, 100%, 81%);
+    --Moderate-Violet : hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet : hsl(271, 15%, 43%);
+    --Grayish-Blue : hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet : hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+body
+{    
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;   
+}
+.main
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-background
+{
+    width: 500px;
+    height: 550px;
+    background: linear-gradient(
+        to top,
+        var(--Light-Violet),
+        var(--Light-Magenta));
+        border-radius: 0 0 500px 500px;
+        position: absolute;
+        top: 0;
+        left:-6rem;
+}
+.right-background
+{
+    width: 480px;
+    height: 600px;
+    opacity: 0.03;
+    background: linear-gradient(
+        to top,
+        var(--Light-Magenta),
+        var(--Very-Dark-Desaturated-Violet));
+        border-radius: 500px 500px 0 0;
+        position: absolute;
+        bottom: 0;
+        right:-6rem;
+}
+.container
+{
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: auto;
+}
+.phone
+{
+    width: 400px;
+    height: 455px;
+    margin-left: 110px;
+    font-size:16px;
+    padding: 8px;
+    border-radius: 20px 20px 25px 25px;
+    box-shadow: 5px 5px 55px 0px var(--Grayish-Blue);
+    background-color: var(--White);
+    z-index: 100;
+}
+.general-background
+{
+    background-color: var(--Light-Grayish-Violet);
+    border-radius: 20px;
+    height: auto;
+    padding-bottom: 6px;
+}
+.main-gradient-head
+{
+    background: linear-gradient(
+        to right,
+        var(--Light-Violet),
+        var(--Light-Magenta));
+        border-radius: 20px 20px 3px 3px;
+}
+.white-nutsh
+{
+    width: 50%;
+    height: 13px;
+    background-color: var(--White);
+    margin-left: auto;
+    margin-right:auto;
+    border-radius:0 0 20px 20px;
+}
+.top-flex
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: var(--White);
+}
+.icon-1
+{
+    font-size: 10px;
+}
+.top-flex .image-box
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+.image-box img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.top-flex p 
+{
+    font-size: 10px;
+    color: var(--Pale-Violet);
+}
+.chat-section
+{
+    font-size: 8px;
+}
+.left-chat
+{
+    background-color: hsl(268, 83%, 93%);
+    margin: 7px;
+    padding: 5px;
+    border-radius: 10px 10px 10px 2px;
+    max-width: 120px;
+    color: var(--Moderate-Violet);
+    line-height: 10px;
+}
+.general-righ-con
+{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 7px;
+}
+.general-chat-images-cont
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+}
+.chat-img-box
+{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.chat-img-box img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.right-chat
+{
+    background-color: hsl(0, 0%, 100%);
+    padding: 7px;
+    border-radius: 10px 10px 2px 10px;
+    max-width: 120px;
+    color: var(--Desaturated-Dark-Violet);
+}
+.gradient-chat
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        to right,
+        var(--Light-Magenta),
+        var(--Light-Violet));
+    margin:10px;
+    max-width: 150px;
+    border-radius: 10px 10px 10px 2px;
+    color: var(--Pale-Violet) ;
+    padding: 10px;
+    box-shadow: 0px  0px 0px 1px var(--Very-Light-Magenta);
+}
+.gradient-chat span
+{
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    font-weight: 600;
+}
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--White);
+    width: 95%;
+    padding:7px;
+    border-radius: 15px;
+    margin: 0 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: var(--Dark-Grayish-Violet);
+}
+footer button
+{
+    width: 20px;
+    height: 20px;
+    background-color: var(--Very-Dark-Desaturated-Violet);
+    border: none;
+    border-radius: 50%;
+    color: var(--White);
+    text-align: center;
+    font-size: 7px;
+}
+.section
+{
+   padding: 100px;
+   width: 100%;
+}
+.section h1
+{
+    color: var(--Very-Dark-Desaturated-Violet);
+}
+.section p
+{
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--Grayish-Blue);
+    margin-top: 20px;
+}
+@media(max-width:500px){
+    body
+    {
+        height: auto;
+    }
+    .container
+    {
+        flex-direction:column;
+        width: 100%;  
+    }
+      .phone
+    {
+        width:250px;
+        margin: 0;
+        margin-top: 5rem;
+        align-self: center;
+    }
+    .section
+    {
+        padding:30px;
+        text-align: center;
+    } 
+     .left-background
+    {
+        height: 430px;
+        left: -20rem;
+    }    
+}
